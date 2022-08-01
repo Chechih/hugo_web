@@ -1,0 +1,41 @@
+[more]
+other = "更多"
+
+[allTitle]
+other = "所有 {{.Title }}"
+
+[recentTitle]
+other = "最近 {{.Title }}"
+
+[readMore]
+other = "繼續閱讀"
+
+[whatsInThis]
+other = "這個{{ .Type }}中有"
+
+[related]
+other = "相關內容"
+
+[yourName]
+other = "你的名字"
+
+[emailAddress]
+other = "電郵地址"
+
+[message]
+other = "信息"
+
+[emailRequiredNote]
+other = "需要電子郵件地址。"
+
+[send]
+other = "發送"
+
+[taxonomyPageList]
+other = "{{ .Title }}"
+
+[taxonomyList]
+other = "分類"
+
+[pageTitle]
+other = "{{ .Name }} 頁"

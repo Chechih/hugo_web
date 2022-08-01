@@ -1,0 +1,29 @@
+{{ define "main" }}
+  {{ if .Site.Params.category_text_color }}
+    <article class="cf pa4-m" style=
+    "background: {{.Site.Params.category_text_color | safeCSS}}; text-align: center;">
+      <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+        <h2>{{ i18n "taxonomyPageList" . }}</h2>
+      </div>
+    </article>
+  {{ else }}
+    <article class="cf pa4-m" style="
+    background: white;
+    text-align: center;">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+      <h2>{{ i18n "taxonomyPageList" . }}</h2>
+    </div>
+  </article>
+  {{ end }}
+      <div style="min-height: calc(100vh - 14rem);">
+        <div class="mw8 center">
+          <section class="ph4 pa4">
+            {{ range  .Pages }}
+              <div class="relative w-100  mb4">
+                {{ .Render "summary" }}
+              </div>
+            {{ end }}
+          </section>
+        </div>
+      </div>
+{{ end }}

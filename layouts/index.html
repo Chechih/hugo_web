@@ -1,0 +1,52 @@
+{{ define "main" }}
+  <div style="min-height: calc(100vh - 23rem);">
+    <article class="cf ph3 pv3 f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+        {{ .Content }}
+      </article>
+      {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
+      {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
+      {{/* Create a variable with that section to use in multiple places. */}}
+      {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+      {{/* Check to see if the section is defined for ranging through it */}}
+      {{ $section_count := len $section }}
+      {{ if ge $section_count 1 }}
+        {{/* Derive the section name  */}}
+        {{ $section_name := index (.Site.Params.mainSections) 0 }}
+
+        <div class="mw8 center">
+          {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
+          <!-- {{ with .Site.GetPage "section" $section_name }}
+              <h1 class="flex-none">
+                {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
+              </h1>
+            {{ end }} -->
+
+          {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+
+          <section class="ph4 pa4">
+            {{/* Range through the first $n_posts items of the section */}}
+            {{ range (first $n_posts $section) }}
+              <div class="relative w-100 mb4">
+                {{ .Render "summary-with-image" }}
+              </div>
+            {{ end }}
+          </section>
+
+          {{ if ge $section_count (add $n_posts 1) }}
+          <section class="pa3 w-100 allposts-btn-container">
+            {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
+            {{ with .Site.GetPage "section" $section_name }}
+              {{ if .Site.Params.allpostsbtn_backgroundcolor }}
+                <a href="{{ .RelPermalink }}" class="link db f6 pa3 br3 bg-mid-gray white dim w5 tc" 
+                style="background: {{.Site.Params.allpostsbtn_backgroundcolor| safeCSS}};">{{ i18n "allTitle" . }}&nbsp;&nbsp;&nbsp;→</a>
+              {{ else }}
+                <a href="{{ .RelPermalink }}" class="link db f6 pa3 br3 bg-mid-gray white dim w5 tc">{{ i18n "allTitle" . }}&nbsp;&nbsp;&nbsp;→</a>
+              {{ end }}
+            {{ end }}
+            </section>
+          {{ end }}
+
+          </div>
+      {{ end }}
+  </div>
+{{ end }}

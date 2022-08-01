@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on NewPlayer</title>
+    <link>https://chechih.github.io/categories/</link>
+    <description>Recent content in Categories on NewPlayer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>NewPlayer</copyright>
+    <lastBuildDate>Sat, 30 Jul 2022 21:20:33 +0800</lastBuildDate><atom:link href="https://chechih.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站建置</title>
+      <link>https://chechih.github.io/categories/%E7%B6%B2%E7%AB%99%E5%BB%BA%E7%BD%AE/</link>
+      <pubDate>Sat, 30 Jul 2022 21:20:33 +0800</pubDate>
+      
+      <guid>https://chechih.github.io/categories/%E7%B6%B2%E7%AB%99%E5%BB%BA%E7%BD%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git_Extensions</title>
+      <link>https://chechih.github.io/categories/Git_Extensions/</link>
+      <pubDate>Wed, 20 Jul 2022 21:45:41 +0800</pubDate>
+      
+      <guid>https://chechih.github.io/categories/Git_Extensions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

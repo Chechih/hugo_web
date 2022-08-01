@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div style="min-height: calc(100vh - 8rem);">
+    <article class="mw8 center">
+      <section class="ph4 pa4">
+        {{ range .Paginator.Pages }}
+          <div class="relative w-100 mb4">
+            {{ .Render "summary" }}
+          </div>
+        {{ end }}
+      </section>
+      <div class="pagination-container">
+        {{- template "_internal/pagination.html" . -}}
+      </div>
+    </article>
+  </div>
+{{ end }}

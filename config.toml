@@ -1,0 +1,80 @@
+title = "My New Hugo Site"
+baseURL = "https://chechih.github.io/"
+languageCode = "zh-tw"
+theme = "Ananke"
+resourceDir = "../resources"
+copyright='NewPlayer'
+disablePathToLower = true  #預設把 URL 中的大寫轉為小寫
+preserveTaxonomyNames = true  #分類(Categories) 大寫轉為小寫
+
+DefaultContentLanguage = "zh"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""					  # Google 分析追蹤的 ID
+enableRobotsTXT = true
+hasCJKLanguage = true
+disqusShortname = "newplayer3335669"
+
+[languages]
+  [languages.zh]
+    title = "NewPlayer"
+    weight = 1
+    [[menu.main]]             # config your menu              # 配置目錄
+  	name = "Home"
+  	weight = 1
+  	identifier = "hmoe"
+  	url = "/"
+    [[menu.main]]
+  	name = "Posts"
+  	weight = 2
+  	identifier = "posts"
+  	url = "/posts/"
+    [[menu.main]]
+  	name = "分類"
+  	weight = 3
+  	identifier = "categories"
+  	url = "/categories/"
+    [[menu.main]]
+  	name = "關於"
+  	weight = 10
+  	identifier = "about"
+  	url = "/about/"
+  #[languages.en]
+    #title = "Ananke"
+    #weight = 2
+    ## languageDirection = 'rtl' for Right-To-Left languages
+  #[languages.fr]
+    #title = "Ananke Fr"
+    #weight = 3
+    #contentDir = "content/fr"
+
+[sitemap]		  # essential                     # 必需
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[taxonomies]
+  category = "categories"
+
+[params]
+  version_date = '202207230266'
+  text_color = ""
+  author = ""
+  favicon = ""
+  site_logo = ""
+  description = "The last theme you'll ever need. Maybe."
+  title_description = "小小工程師的日記"
+  description_color = "white"
+  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-blue"
+  recent_posts_number = 3
+  featured_img = "url('/web/img/ISU_Landscape.jpg')"
+  allpostsbtn_backgroundcolor = "linear-gradient(to right, #00Abd0 50%, rgb(0, 242, 254) 100%)"
+  category_text_color = "inear-gradient(to top, #37ecba 0%, #72afd3 100%);"
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/Chechih"
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/%E5%93%B2%E8%AA%8C-%E5%BC%B5-2a3377245/"

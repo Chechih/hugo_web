@@ -1,0 +1,16 @@
+{{ with partialCached "func/style/GetMainCSS" "style/GetMainCSS" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" >
+{{ end }}
+
+{{ range site.Params.custom_css }}
+  {{ with partialCached "func/style/GetResource" . . }}{{ else }}
+    <link rel="stylesheet" href="{{ relURL (.) }}">
+  {{ end }}
+{{ end }}
+
+{{ if .Site.Params.version_date }}
+  <link rel="stylesheet" href="/web/css/custom.css?bust=123?bust={{.Site.Params.version_date}}">
+{{ else }}
+  <link rel="stylesheet" href="/css/custom.css">
+{{end}}
+
