@@ -42,8 +42,18 @@
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
   </head>
 
-  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-
+  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}" style="background-color: #E7E9EB;">
+    <div class="particle-background" style="width: 100%; height: 100%; position: fixed;"></div>
+    <script>
+      // 創建特效
+      new JParticles.Particle(".particle-background", {
+        color: "#25bfff",
+        // 兩粒子圓心點之間的直線距離
+        proximity: 90,
+        // 定位點半徑 100 以內（包含）的所有粒子，圓心點之間小於等於 proximity 值，則連線
+        range: 100,
+    });
+      </script>
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     <main role="main">
       {{ block "main" . }}{{ end }}

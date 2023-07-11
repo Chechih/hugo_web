@@ -9,8 +9,12 @@
 {{ end }}
 
 {{ if .Site.Params.version_date }}
-  <link rel="stylesheet" href="/web/css/custom.css?bust=123?bust={{.Site.Params.version_date}}">
+  <link rel="stylesheet" href="/web/css/custom.css?bust={{.Site.Params.version_date}}">
 {{ else }}
   <link rel="stylesheet" href="/css/custom.css">
 {{end}}
 
+<!-- 引入基础依赖 -->
+<script src="/web/js/jparticles@3.4.0/browser/jparticles.base.js"></script>
+<!-- 引入粒子特效 -->
+<script src="/web/js/jparticles@3.4.0/browser/particle.js"></script>

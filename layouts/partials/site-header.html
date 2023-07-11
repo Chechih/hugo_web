@@ -2,48 +2,51 @@
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
-    <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-60" }}">
+    <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-60" }} headerbar-wrap">
       {{ partial "site-navigation.html" .}}
-      {{ if .Site.title_description | and .IsHome }}
-        <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-          <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-            {{.Site.Params.title_description}}
-          </h1>
-        </div>
-      {{ end }}
     </div>
+    {{ if .Site.title_description | and .IsHome }}
+    <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+      <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+        {{.Site.Params.title_description}}
+      </h1>
+    </div>
+  {{ end }}
   </header>
 {{ else }}
   <header>
-    <div class="{{.Site.Params.background_color_class | default "bg-black"}}">
+    <div class="{{.Site.Params.background_color_class | default "bg-black"}} navbar-fixed-top">
       {{ partial "site-navigation.html" . }}
-      {{ if .Site.Params.title_description | and .IsHome }}
-        {{ if .Site.Params.featured_img | and .Site.Params.description_color }}
-          <div class="tc-l pv3 ph3 ph4-ns pb5-l" style="background: {{.Site.Params.featured_img | safeCSS}};text-align: center; background-size: cover; opacity: 0.9;">
-            <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title description-title-text" style="color: {{.Site.Params.description_color}};">
-              {{.Site.Params.title_description}}
-            </h1>
-          </div>
-        {{ else if .Site.Params.featured_img }}
-          <div class="tc-l pv3 ph3 ph4-ns pb5-l" style="background: {{.Site.Params.featured_img | safeCSS}};text-align: center; background-size: cover; opacity: 0.9;">
-            <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-              {{.Site.Params.title_description}}
-            </h1>
-          </div>
-        {{ else if .Site.Params.description_img }}
-          <div class="tc-l pv3 ph3 ph4-ns pb5-l">
-            <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title" style="color: {{.Site.Params.description_color}};text-align: center;">
-              {{.Site.Params.title_description}}
-            </h1>
-          </div>
-        {{ else }}
-          <div class="tc-l pv3 ph3 ph4-ns pb5-l">
-            <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-              {{.Site.Params.title_description}}
-            </h1>
-          </div>       
-        {{ end }}
-      {{ end }}
     </div>
+    <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-60" }} headerbar-wrap">
+      {{ partial "site-navigation.html" .}}
+    </div>
+    {{ if .Site.Params.title_description | and .IsHome }}
+    {{ if .Site.Params.featured_img | and .Site.Params.description_color }}
+      <div class="tc-l pv3 ph4-ns pb5-l" style="background: {{.Site.Params.featured_img | safeCSS}};text-align: center; background-size: cover; opacity: 0.9;">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title description-title-text" style="color: {{.Site.Params.description_color}};">
+          {{.Site.Params.title_description}}
+        </h1>
+      </div>
+    {{ else if .Site.Params.featured_img }}
+      <div class="tc-l pv3 ph4-ns pb5-l" style="background: {{.Site.Params.featured_img | safeCSS}};text-align: center; background-size: cover; opacity: 0.9;">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          {{.Site.Params.title_description}}
+        </h1>
+      </div>
+    {{ else if .Site.Params.description_img }}
+      <div class="tc-l pv3 ph4-ns pb5-l">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title" style="color: {{.Site.Params.description_color}};text-align: center;">
+          {{.Site.Params.title_description}}
+        </h1>
+      </div>
+    {{ else }}
+      <div class="tc-l pv3 ph4-ns pb5-l">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          {{.Site.Params.title_description}}
+        </h1>
+      </div>       
+    {{ end }}
+  {{ end }}
   </header>
 {{ end }}
