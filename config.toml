@@ -78,3 +78,7 @@ url = "https://github.com/Chechih"
 [[params.ananke_socials]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/%E5%93%B2%E8%AA%8C-%E5%BC%B5-2a3377245/"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
