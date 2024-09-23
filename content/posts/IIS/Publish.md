@@ -1,7 +1,7 @@
 ---
 title: "IIS 上部屬 ASP.NET Core"
 date: 2024-09-24T00:50:03+08:00
-categories: ["Windows", "IIS", ".NET"]
+categories: ["Windows", "IIS", "NET"]
 ---
 ### 前言
 本範例使用 Windows Server 2022，要安裝的 ASP.NET Core 版本使用 8，專案的話選擇 Visual Studio 2022 的 **ASP.NET Web 應用程式(Model-View-Controller)**，專案名**TestWeb**，ASP.NET 的發佈流程都可以參考這篇
