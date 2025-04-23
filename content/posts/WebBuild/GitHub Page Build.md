@@ -57,4 +57,4 @@ Url 填 剛剛在 GitHub 建立完專案得到的一組 url 應該是長類似�
 ![GitHub Page 測試](/images/GitHub/GitHub_Page_Test.jpg "GitHub Page 測試") 
 
 參考資料:  
-[使用 GitHub 免費製作個人網站](https://gitbook.tw/chapters/github/using-github-pages)
+- [使用 GitHub 免費製作個人網站](https://gitbook.tw/chapters/github/using-github-pages)

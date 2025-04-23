@@ -82,10 +82,10 @@ hugo server
 參考資料:  
 [網站開張！在 GitHub Pages 架設 Hugo 靜態網站](https://www.zoeydc.com/zh/posts/2021-05-23-hugo-website_github-pages_custom-domain/)  
 實作時參考:  
-[Hugo 主题 Even 的自定义配置](https://blog.dontjudge.cn/post/hugo-%E4%B8%BB%E9%A2%98-even-%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/)  
-[iT邦幫忙-Louissu](https://ithelp.ithome.com.tw/users/20142010/ironman/4917)  
-[iT邦幫忙-littlebookboy](https://ithelp.ithome.com.tw/users/20106430/ironman/3613)  
-[Hugo debugging](https://gohugo.io/templates/template-debugging/)  
-[如何创建自己的hugo主题](https://www.jianshu.com/p/0b9aecff290c?u_atoken=a09bd15b-2942-41ed-a27b-585048916162&u_asession=01ibeTyrO0b-6soyY1ZVMVGetyXOcp72Z3tXvLUl7J27MwyRyOO7wcvKk1rOcT6qCPX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K8rUuPXhSrGGE4IwwVDMLj1Ppcarp92QKzyJKyYjREPlmBkFo3NEHBv0PZUm6pbxQU&u_asig=05Q8crcoTkvttMf0fF8w8Fcc2y4y4tT8lYu_jNa7kiriMJPjFLc6Rsfk9yqcYP2seQLvl3F4DoBp_7wYs2eYi6rc7qNOA6xS6-C85Fu3qMSg1insEUE569p-b7Kn9z_Z0hKAroHTU-RaOUotdHF_ZIgyPPdXkooD-2X5soVadGhaT9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzR6W9xF9UQazkic-9JULeE1aaz5yacafDrtqp8_tndodWPRPQyB_SKrj-61LB_f61u3h9VXwMyh6PgyDIVSG1W-qGsCDEK9a3JgjBJp_mk7CS0gA-YCVD9qXtlq4leRItEc80rs_RyY2cZX2NhtSF7Gg1wJ3Vtk1_ug0vJ12v-qsmWspDxyAEEo4kbsryBKb9Q&u_aref=CspdvuBywZCBZszC%2F5e83W%2FYa8s%3D)   
-[Hugo 的文件管理 - 資料夾結構](https://jimmylin212.github.io/post/0002_hugo_content_management_dir_structure/)  
-[Hugo 加入 Disqus 整合性留言管理系統](https://coreychen71.github.io/posts/2019-05/hugoadddisqus/)  
+- [Hugo 主题 Even 的自定义配置](https://blog.dontjudge.cn/post/hugo-%E4%B8%BB%E9%A2%98-even-%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/)  
+- [iT邦幫忙-Louissu](https://ithelp.ithome.com.tw/users/20142010/ironman/4917)  
+- [iT邦幫忙-littlebookboy](https://ithelp.ithome.com.tw/users/20106430/ironman/3613)  
+- [Hugo debugging](https://gohugo.io/templates/template-debugging/)  
+- [如何创建自己的hugo主题](https://www.jianshu.com/p/0b9aecff290c?u_atoken=a09bd15b-2942-41ed-a27b-585048916162&u_asession=01ibeTyrO0b-6soyY1ZVMVGetyXOcp72Z3tXvLUl7J27MwyRyOO7wcvKk1rOcT6qCPX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K8rUuPXhSrGGE4IwwVDMLj1Ppcarp92QKzyJKyYjREPlmBkFo3NEHBv0PZUm6pbxQU&u_asig=05Q8crcoTkvttMf0fF8w8Fcc2y4y4tT8lYu_jNa7kiriMJPjFLc6Rsfk9yqcYP2seQLvl3F4DoBp_7wYs2eYi6rc7qNOA6xS6-C85Fu3qMSg1insEUE569p-b7Kn9z_Z0hKAroHTU-RaOUotdHF_ZIgyPPdXkooD-2X5soVadGhaT9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzR6W9xF9UQazkic-9JULeE1aaz5yacafDrtqp8_tndodWPRPQyB_SKrj-61LB_f61u3h9VXwMyh6PgyDIVSG1W-qGsCDEK9a3JgjBJp_mk7CS0gA-YCVD9qXtlq4leRItEc80rs_RyY2cZX2NhtSF7Gg1wJ3Vtk1_ug0vJ12v-qsmWspDxyAEEo4kbsryBKb9Q&u_aref=CspdvuBywZCBZszC%2F5e83W%2FYa8s%3D)   
+- [Hugo 的文件管理 - 資料夾結構](https://jimmylin212.github.io/post/0002_hugo_content_management_dir_structure/)  
+- [Hugo 加入 Disqus 整合性留言管理系統](https://coreychen71.github.io/posts/2019-05/hugoadddisqus/)  

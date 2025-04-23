@@ -38,4 +38,4 @@ categories: ["IIS", "Windows", "網站建置"]
 
 
 ### 參考
-[Windows Server 2019 如何安裝IIS 運行ASP.NET 專案](https://blog.hungwin.com.tw/windows-server-iis-install/)
+- [Windows Server 2019 如何安裝IIS 運行ASP.NET 專案](https://blog.hungwin.com.tw/windows-server-iis-install/)

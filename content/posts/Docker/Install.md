@@ -26,5 +26,5 @@ reboot
 這樣就可以開始使用 Docker 了
 
 ### 參考
-[Ubuntu Linux 安裝 Docker 步驟與使用教學](https://blog.gtwang.org/virtualization/ubuntu-linux-install-docker-tutorial/)  
-[在 Ubuntu 上安裝 Docker](https://how.wtf/installing-docker-on-ubuntu.html)  
+- [Ubuntu Linux 安裝 Docker 步驟與使用教學](https://blog.gtwang.org/virtualization/ubuntu-linux-install-docker-tutorial/)  
+- [在 Ubuntu 上安裝 Docker](https://how.wtf/installing-docker-on-ubuntu.html)  

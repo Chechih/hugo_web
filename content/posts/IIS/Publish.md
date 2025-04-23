@@ -55,4 +55,4 @@ categories: ["Windows", "IIS", "NET"]
 
 
 ### 參考
-[[.NET Core] 如何在 IIS 上部屬 .NET Core](https://ithelp.ithome.com.tw/articles/10190336)  
+- [[.NET Core] 如何在 IIS 上部屬 .NET Core](https://ithelp.ithome.com.tw/articles/10190336)  

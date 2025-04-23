@@ -19,4 +19,4 @@ hugo
 如果 XXX.github.io 還沒建置，可以參考[使用 GitHub 製作個人網站](/posts/WebBuild/GitHub-Page-Build/)，將檔案中的 index.html 那些全部換掉就可以了
 
 實作時參考:  
-[在 GitHub 部署 Hugo 靜態網站](https://medium.com/@chswei/%E5%9C%A8-github-%E9%83%A8%E7%BD%B2-hugo-%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-9c40682dfe40) 
+- [在 GitHub 部署 Hugo 靜態網站](https://medium.com/@chswei/%E5%9C%A8-github-%E9%83%A8%E7%BD%B2-hugo-%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-9c40682dfe40) 

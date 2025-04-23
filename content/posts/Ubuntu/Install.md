@@ -124,7 +124,7 @@ sudo apt-get install net-tools
 ```
 
 ### 參考
-[【 VM 】如何在 Oracle VirtualBox 中安裝 Ubuntu](https://learningsky.io/install-ubuntu-on-oracle-virtualbox/)  
-[[Linux] VirtualBox Ubuntu 22.04 安裝與設定 Part.2 Guest Additions與共享設置篇](https://medium.com/@zeroro247/linux-virtualbox-ubuntu-22-04-%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A-part-2-guest-additions%E8%88%87%E5%85%B1%E4%BA%AB%E8%A8%AD%E7%BD%AE%E7%AF%87-6138e71e9ba)  
-[APT method bzip2 doesn't exist](https://askubuntu.com/questions/692223/apt-method-bzip2-doesnt-exist)  
+- [【 VM 】如何在 Oracle VirtualBox 中安裝 Ubuntu](https://learningsky.io/install-ubuntu-on-oracle-virtualbox/)  
+- [[Linux] VirtualBox Ubuntu 22.04 安裝與設定 Part.2 Guest Additions與共享設置篇](https://medium.com/@zeroro247/linux-virtualbox-ubuntu-22-04-%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A-part-2-guest-additions%E8%88%87%E5%85%B1%E4%BA%AB%E8%A8%AD%E7%BD%AE%E7%AF%87-6138e71e9ba)  
+- [APT method bzip2 doesn't exist](https://askubuntu.com/questions/692223/apt-method-bzip2-doesnt-exist)  
 
